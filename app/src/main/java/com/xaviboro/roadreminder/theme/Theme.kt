@@ -1,4 +1,4 @@
-package com.xaviboro.roadreminder.ui.theme
+package com.xaviboro.roadreminder.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
