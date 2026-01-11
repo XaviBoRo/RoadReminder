@@ -1,4 +1,4 @@
-package com.xaviboro.roadreminder.ui.theme
+package com.xaviboro.roadreminder.theme
 
 import androidx.compose.ui.graphics.Color
 
