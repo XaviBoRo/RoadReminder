@@ -1,5 +1,7 @@
 package com.xaviboro.roadreminder.ui
 
+import android.R.attr.onClick
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -17,6 +19,8 @@ import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.xaviboro.roadreminder.data.Event
 import com.xaviboro.roadreminder.data.FakeEventRepository
@@ -24,10 +28,13 @@ import com.xaviboro.roadreminder.data.FakeEventRepository
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreen(events: List<Event> = FakeEventRepository.getTodayEvents()) {
+fun HomeScreen(events: List<Event> = FakeEventRepository.getTodayEvents(), onEventClick: (Int) -> Unit) {
     Scaffold(
         topBar = {
-            CenterAlignedTopAppBar(title = { Text("Road Reminder") })
+            CenterAlignedTopAppBar(title = { Text(
+                "ROAD REMINDER",
+                style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold)
+            ) })
         }
     ) { padding ->
         LazyColumn(
@@ -38,21 +45,38 @@ fun HomeScreen(events: List<Event> = FakeEventRepository.getTodayEvents()) {
                 .padding(16.dp)
         ) {
             items(events) { event ->
-                EventItem(event)
+                EventItem(event) { onEventClick(event.id) }
             }
         }
     }
 }
 
 @Composable
-fun EventItem(event: Event) {
+fun EventItem(event: Event, onClick: () -> Unit) {
     Card(
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onClick() },
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
     ) {
-        Column(modifier = Modifier.padding(16.dp)) {
-            Text(text = event.title, style = MaterialTheme.typography.titleMedium)
-            Text(text = event.time, style = MaterialTheme.typography.bodyMedium)
+        Column(modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp)
+        ) {
+            Text(
+                text = event.title,
+                modifier = Modifier.fillMaxWidth(),
+                style = MaterialTheme.typography.titleMedium,
+                textAlign = TextAlign.Center,
+                color = MaterialTheme.colorScheme.onSurface
+            )
+            Text(
+                text = event.time,
+                modifier = Modifier.fillMaxWidth(),
+                style = MaterialTheme.typography.bodyMedium,
+                textAlign = TextAlign.Center,
+                color = MaterialTheme.colorScheme.onSurface
+            )
         }
     }
 }
