@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.xaviboro.roadreminder.theme.RoadReminderTheme
+import com.xaviboro.roadreminder.ui.AppNavigation
 import com.xaviboro.roadreminder.ui.HomeScreen
 
 class MainActivity : ComponentActivity() {
@@ -13,7 +14,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             RoadReminderTheme {
-                HomeScreen()
+                AppNavigation()
             }
         }
     }
