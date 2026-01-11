@@ -1,4 +1,4 @@
-package com.example.roadreminder
+package com.xaviboro.roadreminder
 
 import org.junit.Test
 

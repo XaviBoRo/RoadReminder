@@ -5,13 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.roadreminder"
-    compileSdk {
-        version = release(36)
-    }
+    namespace = "com.xaviboro.roadreminder"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.roadreminder"
+        applicationId = "com.xaviboro.roadreminder"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
