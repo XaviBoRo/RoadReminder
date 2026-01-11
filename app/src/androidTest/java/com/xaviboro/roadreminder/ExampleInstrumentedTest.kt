@@ -1,4 +1,4 @@
-package com.example.roadreminder
+package com.xaviboro.roadreminder
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.roadreminder", appContext.packageName)
+        assertEquals("com.xaviboro.roadreminder", appContext.packageName)
     }
 }
