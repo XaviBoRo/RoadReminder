@@ -1,9 +1,14 @@
 package com.xaviboro.roadreminder.data
 
-data class Event (
+
+import androidx.compose.ui.graphics.vector.ImageVector
+
+data class Event(
     val id: Int,
     val title: String,
     val time: String,
-    val isCompleted: Boolean
+    val isCompleted: Boolean,
+    val icon: ImageVector
+
 )
 
