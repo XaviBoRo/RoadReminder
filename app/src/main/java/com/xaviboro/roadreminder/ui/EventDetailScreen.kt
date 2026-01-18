@@ -33,7 +33,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.xaviboro.roadreminder.data.FakeEventRepository
+import com.xaviboro.roadreminder.data.datasource.FakeEventDataSource
 import com.xaviboro.roadreminder.ui.theme.blueIcon
 import com.xaviboro.roadreminder.ui.theme.orangeIcon
 
@@ -45,7 +45,7 @@ fun EventDetailScreen(
     onBackClick: () -> Unit,
     width: Dp = 200.dp
 ) {
-    val event = FakeEventRepository.getTodayEvents().find { it.id == eventId }
+    val event = FakeEventDataSource.getTodayEvents().find { it.id == eventId }
     Scaffold(
         topBar = {
             TopAppBar(
@@ -165,4 +165,3 @@ fun EventDetailScreen(
     }
 
 }
-
