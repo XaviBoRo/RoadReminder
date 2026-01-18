@@ -114,8 +114,7 @@ com.xaviboro.roadreminder/
 
 ### Pantalla Principal (Home Screen)
 
-![Home Screen](screenshots/PantallaPrincipal.png)
-![Home Screen](screenshots/PantallaPrincipalClick.png)
+
 
 <div align="center">
   <img src="screenshots/PantallaPrincipal.png" alt="Home Screen" width="300"/>
@@ -132,10 +131,9 @@ com.xaviboro.roadreminder/
 
 ### Detalles de Evento (Event Detail Screen)
 
-![Event Detail Screen](screenshots/PantallaDetalleEvento.png)
 
 <div align="center">
-  <img src="screenshots/PantallaDetalleEvento.png" alt="Event Detail Screen" width="300"/>
+  <img src="screenshots/PantallaDetalles.png" alt="Event Detail Screen" width="300"/>
 </div>
 
 **Características:**
