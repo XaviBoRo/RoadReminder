@@ -27,6 +27,19 @@
 - 📍 **Detalles de eventos** - Información completa de cada evento con iconos personalizados
 - 🎨 **UI/UX moderna** - Interfaz fluida desarrollada con Material Design 3
 
+## 🚗 Enfoque Automotive
+
+Este proyecto ha sido diseñado siguiendo los estándares de **Infotainment (IVI)**:
+
+- **🚦 Seguridad vial**  
+  Uso de elementos visuales de gran tamaño y alto contraste para una lectura rápida y segura.
+
+- **👀 Reducción de distracción**  
+  Jerarquía de información optimizada para ser comprendida de un solo vistazo.
+
+- **📱 Interfaz adaptativa**  
+  Diseño preparado para pantallas táctiles de vehículos, priorizando zonas de interacción fáciles de alcanzar.
+
 ---
 
 ## 🏗️ Arquitectura
