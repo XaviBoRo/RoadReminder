@@ -35,7 +35,8 @@ import com.xaviboro.roadreminder.ui.theme.orangeIcon
 
 @Composable
 fun EventRow(
-    event: Event, onClick: () -> Unit = {}
+    event: Event,
+    onClick: () -> Unit = {}
 ) {
     var checked by remember { mutableStateOf(false) }
 
