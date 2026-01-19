@@ -189,12 +189,6 @@ com.xaviboro.roadreminder/
 
 ---
 
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
-
----
-
 ## 👨‍💻 Autor
 
 **Xavi Boniquet Rodriguez**
